@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Informações sobre Post</h5>
+          <p class="card-text">{{post.resumo}}</p>
+          <p class="card-text">Puclicado em: {{post.criado_em}}</p>
+          <p class="card-text">Likes: {{post.like}}</p>
+          <a href="posts-deletar/{{post.id}}" class="btn btn-sm btn-danger">Deletar</a> -
+          <a href="posts-editar/{{post.id}}" class="btn btn-sm btn-secondary">Editar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Informações sobre Autor</h5>
+          <p class="card-text">{{post.autor.nome}}</p>
+          <p class="card-text">Data de nascemento: {{post.autor.data_nascimento}}</p>
+        </div>
+      </div>
+    </div>
+  </div>

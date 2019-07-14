@@ -1,0 +1,14 @@
+<div class="col-4 offset-md-4">
+  <form #f="ngForm" (ngSubmit) ="onSubmit(f)" >
+    <div class="form-group">
+      <label for="exampleInputEmail1">Usuário</label>
+      <input type="text" class="form-control" placeholder="usuario" ngModel name="username">
+      <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu usuário, com ninguém.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Senha</label>
+      <input type="password" class="form-control"  placeholder="Senha" ngModel name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Entrar</button>
+  </form>
+</div>

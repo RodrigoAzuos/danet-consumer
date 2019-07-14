@@ -1,0 +1,18 @@
+<div>
+  <h3>Posts</h3>
+</div>
+  <div class="col-6 offset-md-3">
+    <div *ngFor="let post of posts" class="card border-dark mb-6" style="max-width: 40rem;">
+      <div class="card-header bg-transparent border-dark">
+        {{post.autor.nome}} - {{post.criado_em}}
+      </div>
+      <div class="card-body text-dark">
+          <h5 class="card-title">#{{post.id}}</h5>
+          <p class="card-text">{{post.resumo}}</p>
+      </div>
+      <div class="card-footer bg-transparent border-dark">
+          <a href="posts-detalhe/{{post.id}}" class="btn btn-sm btn-primary">Detalhes</a>  
+      </div>
+  </div>
+</div>
+  
